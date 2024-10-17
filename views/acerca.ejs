@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="/icon/Icon.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="acerca.css">
+</head>
+<body>
+    <%- include('layouts/header.ejs') %>
+
+    <section class="mision-vision-contenedor">
+        <div class="mision-container">
+            <header class="mision-titulo">
+                <h1>MISION</h1>
+            </header>
+            <div class="mision-imagen-contenedor">
+                <img src="mision.png" alt="">
+            </div>
+            <div class="parrafo">
+                <p class="mision-parrafo">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, alias odit minima omnis quis ullam voluptate voluptates eligendi accusantium deserunt placeat! Fugiat, pariatur porro molestiae voluptatibus hic fuga non a.
+                </p>
+            </div>
+        </div>
+
+        <div class="vision-container">
+            <header class="vision-titulo">
+                <h1>VISION</h1>
+            </header>
+            <div class="vision-imagen-contenedor">
+                <img src="vision.jpg" alt="">
+            </div>
+            <div class="parrafo">
+                <p class="vision-parrafo">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae fuga ratione rerum quas harum reiciendis dolorum accusantium ullam commodi. Fuga porro enim facere tempore, quia sed perspiciatis nihil dolores sequi.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section class="nosotros">
+        <h2>Nosotros</h2>
+        <div class="autores-container">
+            <div class="autor">
+                <div class="img-autor">
+                    <img src="Desconocido.jpg" alt="">
+                </div>
+                <p>Estefany</p>
+            </div>
+            <div class="autor">
+                <div class="img-autor">
+                    <img src="Desconocido.jpg" alt="">
+                </div>
+                <p>Jose</p>
+            </div>
+            <div class="autor">
+                <div class="img-autor">
+                    <img src="Desconocido.jpg" alt="">
+                </div>
+                <p>Aldair</p>
+            </div>
+            <div class="autor">
+                <div class="img-autor">
+                    <img src="Desconocido.jpg" alt="">
+                </div>
+                <p>Hector</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Formulario -->
+    <main class="principal">
+        <section class="formulario">
+            <h2>Formulario</h2>
+            <form action="">
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Correo">
+                <input type="tel" placeholder="Número de teléfono">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+
+
+        <section class="foto-local">
+            <img src="cocina.webp" alt="">
+        </section>
+
+        <!-- Sección Ubícanos -->
+        <section class="ubicacion">
+            <h2>Ubícanos</h2>
+            <div class="mapa-container">
+                <div class="iframe-google">
+                    <iframe src="https://www.google.com/maps/embed?..." width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="referencia">
+                    <p>Av. Pueblo Paleta 369</p>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+    <%- include('layouts/footer.ejs') %>
+    <script src="acerca.js"></script>
+</body>
+</html>

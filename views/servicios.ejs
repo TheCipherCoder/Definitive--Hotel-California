@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios</title>
+    <link rel="icon" href="/icon/Icon.png">
+    <link rel="stylesheet" href="servicios.css">
+
+<body>
+ <!-- Header -->
+ <header class="nav-bar">
+  <%- include('layouts/header.ejs') %>
+</header>
+
+ <main>
+
+    <!-- Seccion experiencias -->
+    <section class="experiencias">
+      <div class="experiencias-container">
+          <div class="experiencias-container-titulo">
+          <span id="txt1">Descubre aqui nuestras</span><br />
+          <span id="txt2">Experiencias</span><br />
+          <div class="separador"></div>
+         </div>
+
+         <p class="texto-experiencias">
+          Disfrute de una experiencia única en el Hotel California, donde la elegancia y la comodidad se combinan para ofrecerle una estadía inolvidable. Situado en el corazón de la ciudad, nuestro hotel le brinda fácil acceso a los principales puntos de interés, como museos, restaurantes y zonas comerciales. Cada una de nuestras habitaciones está diseñada para garantizar su confort, con vistas impresionantes y servicios de primera clase. Relájese en nuestra piscina al aire libre o deleite su paladar en nuestro restaurante, que ofrece una exquisita fusión de sabores locales e internacionales. ¡Esperamos crees recuerdos memorables en Hotel California!
+           </p>
+      </div>
+
+    </section>
+
+    <!-- Sección Nuestras Instalaciones -->
+    <section class="instalaciones">
+      <span>Nuestras Instalaciones</span> <br>
+      <div class="separador"></div>
+      <div class="instalaciones-container">
+       <div class="servicio-card">
+          <div class="servicio-img-container">
+            <img class="servicio-img" src="servicio-piscina.png" alt="piscina">
+          </div>
+          <h3 class="servicio-titulo">Piscina</h3>
+          <p class="servicio-texto">Lun-Dom: 06:00 - 22:00</p>
+          <p class="servicio-texto">Climatizado</p>
+          <a href="#"><button type="submit" class="boton-informacion">Más información</button>
+          </a>
+          </div>
+
+        <div class="servicio-card">
+            <div class="servicio-img-container">
+              <img  class="servicio-img" src="servicio-spa.png" alt="Spa y Sauna">
+            </div>
+            <h3 class="servicio-titulo">Spa y Sauna</h3>
+            <p class="servicio-texto">Lun-Sab: 11:00 - 20:00</p>
+            <p class="servicio-texto">Contacto: +51 999 999 999</p>
+            <a href="#spa"> <button type="submit" class="boton-informacion">Más información</button>
+         </a>
+            </div>
+
+          <div class="servicio-card">
+            <div class="servicio-img-container">
+              <img  class="servicio-img" src="servicio-gimnasio.png" alt="Fitness Studio">
+            </div>
+            <h3 class="servicio-titulo">Fitness Studio</h3>
+            <p class="servicio-texto">Lun-Dom: 06:00 - 22:00</p>
+            <p class="servicio-texto">Entrenador Personal</p>
+            <a href="#gimnasio"> <button type="submit" class="boton-informacion">Más información</button>
+          </a>
+            </div>
+
+          <div class="servicio-card">
+            <div class="servicio-img-container">
+              <img  class="servicio-img" src="servicio-salon.png" alt="Salon de Recepciones">
+            </div>
+            <h3 class="servicio-titulo">Salón de Recepciones</h3>
+            <p class="servicio-texto">Contacto: +51 988 888 888</p>
+            <p class="servicio-texto">Servicio de Catering</p>
+           <a href="#"> <button type="submit" class="boton-informacion">Más información</button>
+           </a>
+          </div>
+
+      </div>
+    </section>
+
+    <!-- Sección Recomendaciones -->
+    <section class="recomendaciones">
+      <span>Recomendaciones</span> <br>
+      <div class="separador"></div>
+     <div class="recomendaciones-container"> 
+        <div class="recomendaciones-card">
+            <h3 class="recomendaciones-titulo"> Lorena - Fitness Studio</h3>
+            <div class="rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+          </div>
+            <p class="recomendaciones-texto">"El Fitness Studio es increíble. Equipos modernos y entrenadores expertos me han ayudado a alcanzar mis objetivos. ¡Totalmente recomendable!" </p>
+        </div>
+
+        <div class="recomendaciones-card">
+            <h3 class="recomendaciones-titulo"> Eduardo - Piscina</h3>
+            <div class="rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+          </div>
+            <p class="recomendaciones-texto">"La piscina climatizada es perfecta para relajarse. Ambiente tranquilo y refrescante. ¡Un lugar ideal para disfrutar y desconectar!" </p>
+        </div>
+
+        <div class="recomendaciones-card">
+            <h3 class="recomendaciones-titulo"> Andres - Fitness Studio</h3>
+            <div class="rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+          </div>
+            <p class="recomendaciones-texto">"Excelente Fitness Studio. Equipos de calidad y entrenadores motivadores. Cada entrenamiento es efectivo y agradable. ¡Lo recomiendo sin dudar!" </p>
+        </div>
+
+     </div>
+    </section>
+
+    
+    <!-- Sección Reservar -->
+    <section class="reservar">
+      <div class="contenedor-reservar">
+        <a href="#" class="btn-reservar">Reservar</a>
+      </div>
+  </section>
+  
+
+    <!-- Sección InfoSpa -->
+    <section class="InfoSpa">
+      <div>
+        <h2 id="spa">Spa</h2>
+      <p id="InfoSpa-p">Con una suave paleta de colores en blanco y verde, acentuada por maderas naturales,
+        nuestro spa está diseñado para revitalizar el confort.</p>
+      </div>
+      <div class="InfoSpa-container">
+        <div class="InfoSpa-card">
+        <div class="servicio-img-1">
+          <img src="info-spa.png" alt="Spa - informacion">
+        </div>
+        <div class="servicio-contenido-1">
+            <p class="servicio-titulo-1">Recomponer cuerpo y mente</p>
+            <p class="servicio-texto-1">Nuestro exclusivo spa cuenta con una paleta de
+                colores neutros y relajantes, con elementos naturales
+                para el máximo confort. En el spa urbano más grande
+                de América Latina, ofrecemos 17 salas de tratamiento,
+                4 suites con hidromasaje y un salón Redkin de
+                servicio completo. Disfruta de un refrescante baño en
+                nuestros baños turcos o libera toxinas en nuestra
+                tonificante sauna.
+            </p> 
+        </div>
+        </div>
+
+        <div  class="InfoSpa-card">
+            <div class="servicio-contenido-2">
+                <p class="servicio-titulo-2">Detalles del spa</p>
+                <p class="servicio-texto-2">Programa tus tratamientos de spa para garantizar la
+                    disponibilidad. Te pedimos que llegues 30 minutos
+                    antes de tu cita para tener tiempo de cambiarte y
+                    disfrutar de una taza de té de hierbas aromáticas.
+                    Puedes solicitar un terapeuta femenino o masculino,
+                    pero no podemos garantizar uno en particular. Las
+                    citas se reservarán con tarjeta de crédito o
+                    proporcionando el número de habitación.
+                </p>
+            </div>
+            <div class="servicio-img-2">
+              <img src="info-spa2.png" alt="Spa - informacion">
+            </div>
+            </div>
+       
+      </div>
+    </section>
+
+    
+        <!-- Sección InfoGimnasio -->
+        <section class="InfoGimnasio">
+          <h2 id="gimnasio">Gimnasio</h2>
+          <p id="InfoGimnasio-p">Ubicado en el segundo piso del hotel, nuestro gimnasio de 278 metros cuadrados está bien equipado con una variedad de
+            máquinas para entrenamiento cardiovascular, de fuerza y de estiramiento, junto con suministros para mantenerte hidratado.</p>
+          <div class="InfoGimnasio-container">
+            <div class="InfoGimnasio-card">
+            <div class="servicio-img-1">
+             <img src="info-gimnasio.png" alt="Gimnasio">
+            </div>
+            <div class="servicio-contenido-1">
+                <p class="servicio-titulo-1">Equipos de alta tecnología</p>
+                <p class="servicio-texto-1">Todas nuestras máquinas de cardio tienen TV.
+                    Disponemos de auriculares de cortesía en la recepción
+                    del spa. El gimnasio ofrece instructores todos los días
+                    de 06:00 h a 22:00 h. Consulta disponibilidad y más
+                    información en la recepción del spa.
+                </p> 
+            </div>
+            </div>
+        </section>
+
+        <!-- Sección Videos -->
+        <section id="seccion-video">
+
+        <h2>Experiencias</h2>
+        <div class="video">
+          <video width="310" height="175" controls poster="video-portada-1.png">
+            <source class="video-s" src="/video/video-gimnasio.mp4" type="video/mp4">
+          </video>
+         </div>
+
+         <div class="video">
+          <video width="310" height="175" controls poster="video-portada-2.png">
+            <source src="/video/video-piscina.mp4" type="video/mp4">
+          </video>
+         </div>
+
+         <div class="video">
+          <video width="310" height="175" controls poster="video-portada-3.png">
+            <source src="/video/video-spa.mp4" type="video/mp4">
+          </video>
+         </div>
+        
+        </section>
+
+  <!-- Sección Reservar -->
+  <section class="reservar">
+    <div class="contenedor-reservar">
+      <a href="#" class="btn-reservar">Reservar</a>
+    </div>
+</section>
+
+</main>
+<%- include('layouts/footer.ejs') %>
+  <script src="/js/carrusel.js"></script>
+  </body>
+</html>
