@@ -39,32 +39,21 @@
     <section class="review-section">
         <h2>Testimonios</h2>
         <div class="review-wrapper">
-            <div class="review-container">
-                <div class="review-bubble">
-                    <p>"El servicio en el hotel fue impecable desde el momento en que llegamos..."</p>
-                    <span class="review-author">⭐⭐⭐⭐ - Andrew92</span>
-                </div>
-            </div>
-            <div class="review-container">
-                <div class="review-bubble">
-                    <p>"La ubicación del hotel es perfecta, cerca de todas las atracciones principales..."</p>
-                    <span class="review-author">⭐⭐⭐⭐⭐ - MigueDz</span>
-                </div>
-            </div>
-            <div class="review-container">
-                <div class="review-bubble">
-                    <p>"Las instalaciones del hotel son modernas, limpias y bien mantenidas..."</p>
-                    <span class="review-author">⭐⭐⭐⭐⭐ - Melisa23</span>
-                </div>
-            </div>
-            <div class="review-container">
-                <div class="review-bubble">
-                    <p>"Desde que llegamos, nos sentimos como en casa. La recepción fue cálida..."</p>
-                    <span class="review-author">⭐⭐⭐⭐ - BryanG52</span>
-                </div>
-            </div>
+            <% if (testimonios && testimonios.length > 0) { %>
+                <% testimonios.forEach(function(testimonio) { %>
+                    <div class="review-container">
+                        <div class="review-bubble">
+                            <p>"<%= testimonio.mensaje %>"</p>
+                            <span class="review-author">⭐⭐⭐⭐⭐ - <%= testimonio.nombre %></span>
+                        </div>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <p>No hay testimonios disponibles.</p>
+            <% } %>
         </div>
     </section>
+    
 
     <!-- Sección de Promociones -->
     <section class="promotions">
