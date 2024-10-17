@@ -1,94 +1,187 @@
-:root {
-    --color-1: hsl(0, 0%, 100%);
+@import url('https://fonts.googleapis.com/css2?family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
 
-    --color-2: #e8b34b;
-    --color-3: red;
+/* Variables de colores */
+:root {
+    --color-principal: #E8B34B;
+    --color-secundario: #ffffff;
+    --color-acento: #ff5722;
+    --color-fondo: #f4f4f4;
+    --color-texto: #333;
 }
 
+/* Estilos globales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Antic Didone', serif;
     margin: 0;
     padding: 0;
-    background-color: var(--color-1);
-    /* Color de fondo */
-}
-
-h1 {
-    color: var(--color-2);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
 }
 
 header {
-    background-color: var(--color-1);
-    color: #fff;
-    padding: 20px;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
     text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
 }
 
-main {
+.titulo-principal {
+    font-family: 'Simonetta', serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.subtitulo {
+    font-family: 'Simonetta', serif;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+/* Estilos para las tarjetas de habitaciones */
+.habitaciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.habitacion {
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.habitacion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-habitacion {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.habitacion h2 {
+    font-family: 'Simonetta', serif;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.habitacion p {
+    font-family: 'Antic Didone', serif;
+    font-size: 1rem;
+    color: #777;
+}
+
+.precio {
+    font-family: 'Simonetta', serif;
+    font-size: 1.2rem;
+    color: var(--color-acento);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-reservar {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Simonetta', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reservar:hover {
+    background-color: var(--color-acento);
+}
+
+/* Estilos para el formulario */
+.formulario-reserva {
+    background-color: var(--color-secundario);
+    padding: 30px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-reserva h2 {
+    text-align: center;
+    font-family: 'Simonetta', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.servicios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-image: url("https://media.istockphoto.com/id/1340546254/es/foto/mujer-bastante-positiva-con-el-pelo-largo-bebe-agua-y-sentada-en-la-cama-en-una-ma%C3%B1ana-soleada.jpg?s=612x612&w=0&k=20&c=d6sUzmUsejphUAolNIyMNzDdxzT-GDB_l18uvj0LQv0=");
-    background-position: center center;
-    background-size: 1400px 1200px;
-    background-repeat: no-repeat;
-}
-
-.cuadro {
-    background-color: rgba(83, 81, 81, 0.59);
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 20px;
-    width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.cuadro {
-    transition: all 0.3s;
-}
-
-.formulario {
-    background-color: #2e2e2e;
-    padding: 20px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#respuesta {
-    color: #666;
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-.imgA {
-    width: 300px;
-    height: 200px;
-}
-
-footer {
-    width: 100%;
-    height: 100px;
-    background-color: var(--color-1);
-}
-
-.pTitulo {
-    font-size: 36px;
-  font-weight: bold;
-  color: #000; /* Color negro */
-
+    gap: 20px;
 }
 
 label {
-    color: var(--color-2);
+    font-family: 'Antic Didone', serif;
+    font-size: 1rem;
+    color: var(--color-texto);
 }
 
-.h21 {
-    color: var(--color-2);
+input, textarea {
+    padding: 10px;
+    font-family: 'Antic Didone', serif;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button.btn-enviar {
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    padding: 12px;
+    font-family: 'Simonetta', serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-enviar:hover {
+    background-color: var(--color-acento);
+}
+
+.error {
+    color: red;
+    font-family: 'Antic Didone', serif;
+    font-size: 0.9rem;
+    display: none; /* Oculto por defecto */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .titulo-principal {
+        font-size: 2rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
 }

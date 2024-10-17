@@ -4,91 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reservaciones de Habitaciones</title>
     <link rel="icon" href="/icon/Icon.png">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="reservaciones.css">
 </head>
 
 <body>
     <%- include('layouts/header.ejs') %>
-    <main>
-        <section class="servicios">
-            <div class="cuadro">
-                <img class="imgA"  src="https://i.pinimg.com/736x/73/65/9f/73659f2c8ac018264d1e82e0c2308ac7.jpg" alt="Habitación 1">
+    <header class="header">
+        <h1 class="titulo-principal">Reserva tu Estancia Perfecta</h1>
+        <p class="subtitulo">Elige entre nuestras habitaciones exclusivas y vive una experiencia inolvidable</p>
+    </header>
+    <main class="main-content">
+        <section class="habitaciones">
+            <!-- Tarjeta de Habitación -->
+            <div class="habitacion">
+                <img class="imagen-habitacion" src="https://i.pinimg.com/736x/73/65/9f/73659f2c8ac018264d1e82e0c2308ac7.jpg" alt="Habitación 1">
                 <h2>Habitación Individual</h2>
-                <p>Disfruta de nuestra habitación individual con baño privado y aire acondicionado</p>
-                <p>Precio: $100/noche</p>
-                <button class="btn1">Reservar</button>
-
+                <p>Baño privado y aire acondicionado</p>
+                <p class="precio">$100/noche</p>
+                <button class="btn-reservar">Reservar</button>
             </div>
-            <div class="cuadro">
-                <img class="imgA" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/c9/62/c4/hotel-cama.jpg?w=700&h=-1&s=1" alt="Habitación 2">
+            <!-- Tarjeta de Habitación -->
+            <div class="habitacion">
+                <img class="imagen-habitacion" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/c9/62/c4/hotel-cama.jpg?w=700&h=-1&s=1" alt="Habitación 2">
                 <h2>Habitación Doble</h2>
-                <p>Disfruta de nuestra habitación doble con baño privado y aire acondicionado</p>
-                <p>Precio: $150/noche</p>
-                <button class="btn1">Reservar</button>
+                <p>Baño privado y aire acondicionado</p>
+                <p class="precio">$150/noche</p>
+                <button class="btn-reservar">Reservar</button>
             </div>
-            <!-- ... -->
-            <div class="cuadro">
-                <img class="imgA" src="https://i.pinimg.com/236x/b5/47/cf/b547cf026723c2eb3396897cc5806db7.jpg" alt="Habitación 3">
+            <!-- Tarjeta de Habitación -->
+            <div class="habitacion">
+                <img class="imagen-habitacion" src="https://i.pinimg.com/236x/b5/47/cf/b547cf026723c2eb3396897cc5806db7.jpg" alt="Habitación 3">
                 <h2>Habitación Suite</h2>
-                <p>Disfruta de nuestrhabitación suite cona  baño privado, aire acondicionado y vista al mar</p>
-                <p>Precio: $250/noche</p>
-                <button class="btn1">Reservar</button>
+                <p>Vista al mar, baño privado, aire acondicionado</p>
+                <p class="precio">$250/noche</p>
+                <button class="btn-reservar">Reservar</button>
             </div>
-            <div class="cuadro">
-                <img class="imgA" src="https://www.hola.com/horizon/original_aspect_ratio/de064cd3cca2-habitaciones-hotel-5a-a.jpg" alt="Servicio 1">
-                <h2>Habitación suite 3 horas</h2>
-                <p>Disfruta de nuestrhabitación suite cona  baño privado, aire acondicionado y vista al mar</p>
-                <p>Precio: $100/3 horas</p>
-                <button id="btn1">Reservar</button>
-            </div>
-            <div class="cuadro">
-                <img class="imgA" src="https://images.homify.com/v1500461282/p/photo/image/2132561/006_Home_Staging_Dormitorio_Principal_Puerto_Sada_DESPUES.jpg" alt="Servicio 2">
-                <h2> Habitación familiar</h2>
-                <p>Disfruta de nuestra habitación familiar incluuye una cama adicional con baño privado, aire acondicionado y vista al mar</p>
-                <p>Precio: $500/noche</p>
-                <button class="btn1">Reservar</button>
-            </div>
-            <div class="cuadro">
-                <img class="imgA" src="https://www.hola.com/horizon/original_aspect_ratio/de064cd3cca2-habitaciones-hotel-5a-a.jpg" alt="Servicio 3">
-                <h2>Habitación tiempo requerido </h2>
-                <p>Disfruta de nueestra habitación donde tu decides el tiempo de ospedarte con baño privado, aire acondicionado y vista al mar</p>
-                <p>Precio: $900/semana</p>
-                <button class="btn1">Reservar</button>
-            </div>
+            <!-- Más tarjetas de habitaciones aquí -->
         </section>
-        <section class="formulario">
-            <h2 class="h21">Reserva ahora</h2>
+
+        <!-- Formulario de Reservación -->
+        <section class="formulario-reserva">
+            <h2>Reserva Ahora</h2>
             <form id="formulario-reserva">
-                <label>Nombre:</label>
-                <input type="text" id="nombre" name="nombre">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
                 <span id="error-nombre" class="error"></span>
-                <br><br>
-                <label>Correo:</label>
-                <input type="email" id="correo" name="correo">
+                
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico">
                 <span id="error-correo" class="error"></span>
-                <br><br>
-                <label>Número de teléfono:</label>
-                <input type="tel" id="telefono" name="telefono">
+                
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono">
                 <span id="error-telefono" class="error"></span>
-                <br><br>
-                <label>Mensaje:</label>
-                <textarea id="mensaje" name="mensaje"></textarea>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tus comentarios o peticiones"></textarea>
                 <span id="error-mensaje" class="error"></span>
-                <br><br>
-                <button id="enviar">Enviar</button>
+                
+                <button type="submit" class="btn-enviar">Enviar</button>
             </form>
             <div id="respuesta"></div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Hotel. Todos los derechos reservados.</p>
-    </footer>
 
-
+    <%- include('layouts/footer.ejs') %>
+    <script src="reservaciones.js"></script>
 </body>
-<%- include('layouts/footer.ejs') %>
-<script src="reservas.js"></script>
 </html>

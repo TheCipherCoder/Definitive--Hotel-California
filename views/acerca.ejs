@@ -3,109 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Acerca de Nosotros</title>
     <link rel="icon" href="/icon/Icon.png">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="acerca.css">
+    <!-- Fuentes elegantes -->
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Encabezado -->
     <%- include('layouts/header.ejs') %>
 
+    <!-- Sección Misión y Visión -->
     <section class="mision-vision-contenedor">
-        <div class="mision-container">
-            <header class="mision-titulo">
-                <h1>MISION</h1>
-            </header>
-            <div class="mision-imagen-contenedor">
-                <img src="mision.png" alt="">
-            </div>
-            <div class="parrafo">
-                <p class="mision-parrafo">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, alias odit minima omnis quis ullam voluptate voluptates eligendi accusantium deserunt placeat! Fugiat, pariatur porro molestiae voluptatibus hic fuga non a.
+        <div class="mision-vision">
+            <div class="mision-container">
+                <h1 class="acerca-titulo-main">MISIÓN</h1>
+                <div class="mision-imagen-contenedor">
+                    <img src="mision.jpg" alt="Misión">
+                </div>
+                <p class="acerca-parrafo">
+                    Nuestra misión es brindar servicios de alta calidad con el compromiso de satisfacer las necesidades de nuestros clientes, ofreciendo productos innovadores y un servicio excepcional.
                 </p>
             </div>
-        </div>
 
-        <div class="vision-container">
-            <header class="vision-titulo">
-                <h1>VISION</h1>
-            </header>
-            <div class="vision-imagen-contenedor">
-                <img src="vision.jpg" alt="">
-            </div>
-            <div class="parrafo">
-                <p class="vision-parrafo">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae fuga ratione rerum quas harum reiciendis dolorum accusantium ullam commodi. Fuga porro enim facere tempore, quia sed perspiciatis nihil dolores sequi.
+            <div class="vision-container">
+                <h1 class="acerca-titulo-main">VISIÓN</h1>
+                <div class="vision-imagen-contenedor">
+                    <img src="vision.jpg" alt="Visión">
+                </div>
+                <p class="acerca-parrafo">
+                    Nos visualizamos como una empresa líder en el mercado global, reconocida por nuestro enfoque en la innovación y la excelencia, contribuyendo a un futuro más sostenible.
                 </p>
             </div>
-            
         </div>
     </section>
 
-    <!-- Sección Nosotros -->
+    <!-- Sección de Autores -->
     <section class="nosotros">
-        <h2>Nosotros</h2>
+        <h2 class="acerca-titulo-dos">Nosotros</h2>
         <div class="autores-container">
             <div class="autor">
-                <div class="img-autor">
-                    <img src="Desconocido.jpg" alt="">
-                </div>
-                <p>Estefany</p>
+                <img src="Desconocido.jpg" alt="Estefany">
+                <p class="acerca-parrafo">Estefany</p>
             </div>
             <div class="autor">
-                <div class="img-autor">
-                    <img src="Desconocido.jpg" alt="">
-                </div>
-                <p>Jose</p>
+                <img src="Desconocido.jpg" alt="Jose">
+                <p class="acerca-parrafo">Jose</p>
             </div>
             <div class="autor">
-                <div class="img-autor">
-                    <img src="Desconocido.jpg" alt="">
-                </div>
-                <p>Aldair</p>
+                <img src="Desconocido.jpg" alt="Aldair">
+                <p class="acerca-parrafo">Aldair</p>
             </div>
             <div class="autor">
-                <div class="img-autor">
-                    <img src="Desconocido.jpg" alt="">
-                </div>
-                <p>Hector</p>
+                <img src="Desconocido.jpg" alt="Hector">
+                <p class="acerca-parrafo">Hector</p>
             </div>
         </div>
     </section>
 
-    <!-- Sección Formulario -->
-    <main class="principal">
-        <section class="formulario">
-            <h2>Formulario</h2>
-            <form action="">
-                <input type="text" placeholder="Nombre">
-                <input type="email" placeholder="Correo">
-                <input type="tel" placeholder="Número de teléfono">
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-
-
-
-        <section class="foto-local">
-            <img src="cocina.webp" alt="">
-        </section>
-
-        <!-- Sección Ubícanos -->
-        <section class="ubicacion">
-            <h2>Ubícanos</h2>
-            <div class="mapa-container">
-                <div class="iframe-google">
-                    <iframe src="https://www.google.com/maps/embed?..." width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="referencia">
-                    <p>Av. Pueblo Paleta 369</p>
-                </div>
+    <!-- Sección Ubicación -->
+    <section class="ubicacion">
+        <h2 class="acerca-titulo-dos">Ubícanos</h2>
+        <div class="mapa-container">
+            <div class="iframe-google">
+                <iframe src="https://www.google.com/maps/embed?..." width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-        </section>
-    
-    </main>
+            <div class="referencia">
+                <p class="acerca-parrafo">Av. Pueblo Paleta 369, Kanto</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
     <%- include('layouts/footer.ejs') %>
-    <script src="acerca.js"></script>
 </body>
 </html>

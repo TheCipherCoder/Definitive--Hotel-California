@@ -1,32 +1,25 @@
-document.addEventListener("DOMContentLoaded", function () {
-    window.onscroll = function () {
-      var navbar = document.getElementById("navbar");
-      var scrollPosition = window.scrollY || document.documentElement.scrollTop;
-  
-      if (scrollPosition > 450) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
-      }
-    };
-  });
-  
-  var f = 0;
-  var fondo = new Array(3);
-  fondo[0] = "header-0.png";
-  fondo[1] = "header-1.png";
-  fondo[2] = "header-2.png";
-  
-  function rotacion() {
-    document.getElementById("fondo-carousel").src = fondo[f];
-    f++;
-    if (f == fondo.length) {
-      f = 0;
+// index.js
+
+// Carrusel de imágenes
+let currentIndex = 0; // Índice de la imagen actual
+const images = document.querySelectorAll('.carousel-image'); // Selecciona todas las imágenes
+const totalImages = images.length; // Total de imágenes
+
+function cambiarImagen() {
+    currentIndex = (currentIndex + 1) % totalImages; // Cambia al siguiente índice
+    const translateX = -currentIndex * 100; // Calcula el desplazamiento
+    document.querySelector('.carousel-wrapper').style.transform = `translateX(${translateX}%)`; // Aplica el desplazamiento
+}
+
+// Cambia la imagen cada 5 segundos
+setInterval(cambiarImagen, 2000);
+
+// Efectos del navbar
+const navbar = document.querySelector('nav');
+window.onscroll = function() {
+    if (window.scrollY > 100) {
+        navbar.classList.add('navbar-scrolled');
+    } else {
+        navbar.classList.remove('navbar-scrolled');
     }
-  
-    setTimeout(rotacion, 3000);
-  }
-  
-  document.addEventListener("DOMContentLoaded", function () {
-      rotacion();
-  })
+};

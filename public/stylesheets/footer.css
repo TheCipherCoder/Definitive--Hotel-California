@@ -1,0 +1,53 @@
+/* Estilo para el footer */
+.footer {
+    background-color: #1c1c1c; /* Fondo oscuro */
+    color: white; /* Color del texto */
+    padding: 30px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centrar el texto */
+    position: relative; /* Posición relativa para los efectos */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Sombra superior */
+}
+
+.footer-content {
+    max-width: 1200px; /* Máximo ancho del contenido */
+    margin: 0 auto; /* Centramos el contenido */
+    display: flex; /* Usar flexbox para alinear horizontalmente */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centrar verticalmente */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+}
+
+.footer-text {
+    flex: 1; /* Permitir que ocupe espacio flexible */
+    text-align: left; /* Alinear el texto a la izquierda */
+    padding: 0 20px; /* Espaciado lateral */
+}
+
+.footer-text h2 {
+    font-size: 1.8rem; /* Tamaño de fuente del título */
+    margin: 0; /* Sin margen */
+}
+
+.footer-text p {
+    font-size: 1rem; /* Tamaño de fuente del párrafo */
+    margin: 5px 0 0; /* Margen superior e inferior */
+}
+
+.social-media-icons {
+    flex: 0 0 auto; /* No expandir, mantener tamaño automático */
+    padding: 0 20px; /* Espaciado lateral */
+}
+
+.social-media-icons a {
+    margin: 0 10px; /* Espacio entre los íconos */
+    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+.social-media-icons a:hover {
+    transform: scale(1.1); /* Escalar el ícono al pasar el mouse */
+}
+
+.social-media-icons img {
+    width: 40px; /* Ancho de los íconos */
+    height: 40px; /* Altura de los íconos */
+}
