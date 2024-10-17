@@ -5,7 +5,6 @@ module.exports = {
     },
 
     insertar: function(conexion, datos, funcion) {
-        // Asegúrate de que 'id' sea autoincremental en tu base de datos
         const query = 'INSERT INTO testimonios (nombre, correo, mensaje) VALUES (?, ?, ?)';
         conexion.query(query, [datos.nombre, datos.correo, datos.mensaje], funcion);
     }

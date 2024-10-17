@@ -1,8 +1,11 @@
-var express = require('express')
-var router = express.Router()
-var reservacionesController = require('../controllers/reservacionesController')
+var express = require('express');
+var router = express.Router();
+var reservacionesController = require('../controllers/reservacionesController');
 
-router.get('/', reservacionesController.reservaciones)
-router.post('/reservaciones/enviar', reservacionesController.enviarReserva);
+// Ruta para obtener las habitaciones y mostrar el formulario
+router.get('/', reservacionesController.reservaciones);
 
-module.exports = router
+// Ruta para enviar la reserva
+router.post('/', reservacionesController.enviarReserva);
+
+module.exports = router;

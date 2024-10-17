@@ -14,23 +14,17 @@ module.exports = {
     },
 
     enviarReserva: function(req, res) {
-        const { nombre, correo, telefono, mensaje } = req.body;
-
-        // Validamos que los campos no estén vacíos
-        if (!nombre || !correo || !telefono || !mensaje) {
-            return res.status(400).send('Todos los campos son requeridos');
-        }
-
+        const { nombre, correo, mensaje } = req.body;
+            
+        const datos = { nombre, correo, mensaje };
+    
         // Insertamos los datos en la base de datos
-        con.query('INSERT INTO reservas (nombre, correo, telefono, mensaje) VALUES (?, ?, ?, ?)', 
-        [nombre, correo, telefono, mensaje], 
-        (err, result) => {
+        habitacion.insertar(con, datos, (err) => {
             if (err) {
-                console.error('Error al insertar reserva:', err);
-                return res.status(500).send('Error al insertar la reserva');
+                console.error('Error al insertar los datos:', err);
+                return res.status(500).send('Error al enviar la reserva.');
             }
-            console.log('Reserva guardada:', result);
-            res.redirect('/reservaciones'); // Redireccionamos después de enviar
+            res.redirect('/');
         });
-    }
+    }        
 };
