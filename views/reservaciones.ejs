@@ -7,12 +7,16 @@
     <title>Document</title>
     <link rel="icon" href="/icon/Icon.png">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="reservaciones.css">
+    <link rel="stylesheet" href="../public/stylesheets/reservaciones.css">
 </head>
 
 <body>
     <%- include('layouts/header.ejs') %>
-    <main>
+    <header class="header">
+        <h1 id="titulo"></h1>
+        <p class="pTitulo"></p>
+    </header>
+    <main class="main">
         <section class="servicios">
             <div class="cuadro">
                 <img class="imgA"  src="https://i.pinimg.com/736x/73/65/9f/73659f2c8ac018264d1e82e0c2308ac7.jpg" alt="Habitación 1">
@@ -83,12 +87,11 @@
             <div id="respuesta"></div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Hotel. Todos los derechos reservados.</p>
-    </footer>
+
+    
 
 
 </body>
 <%- include('layouts/footer.ejs') %>
-<script src="reservas.js"></script>
+<script src="../routes/reservaciones.js"></script>
 </html>
