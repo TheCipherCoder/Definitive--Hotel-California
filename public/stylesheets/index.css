@@ -56,23 +56,22 @@ body {
 .text-overlay p {
   font-size: 1.5rem; 
 }
-
-
 .review-section {
     padding: 60px 100px;
-    background-color: var(--color-secundario);
+    background-color: var(--color-secundario); /* Manteniendo el fondo original */
     text-align: center;
 }
 
 .review-wrapper {
     display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se distribuyan en varias filas */
     justify-content: space-around;
     gap: 20px;
     margin-top: 30px;
 }
 
 .review-container {
-    flex: 1;
+    flex: 1 1 calc(33.33% - 40px); /* Ajusta la anchura a 33.33% y resta el gap */
     background-color: var(--color-fondo);
     padding: 20px;
     border-radius: 15px;
@@ -81,21 +80,37 @@ body {
 
 .review-bubble {
     padding: 20px;
-    background-color: var(--color-primario);
-    color: var(--color-secundario);
+    background-color: var(--color-primario); /* Manteniendo el color de fondo del bubble */
+    color: var(--color-secundario); /* Manteniendo el color del texto */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s, background-color 0.3s ease; /* Animación original conservada */
 }
 
 .review-bubble:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); 
+    background-color: var(--color-primario-hover); 
+    color: #2e2e2e;
 }
 
 .review-author {
     margin-top: 15px;
     font-weight: bold;
 }
+
+
+@media (max-width: 900px) {
+    .review-container {
+        flex: 1 1 calc(50% - 40px); 
+    }
+}
+
+@media (max-width: 600px) {
+    .review-container {
+        flex: 1 1 100%; /
+    }
+}
+
 
 
 .promotions {

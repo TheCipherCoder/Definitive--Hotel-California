@@ -26,5 +26,7 @@ module.exports = {
             }
             res.redirect('/');
         });
-    }        
+    }
+
+    
 };
