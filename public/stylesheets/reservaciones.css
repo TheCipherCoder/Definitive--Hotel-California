@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
 
-/* Variables de colores */
+
 :root {
     --color-principal: #E8B34B;
     --color-secundario: #ffffff;
@@ -10,7 +10,7 @@
     --color-texto: #333;
 }
 
-/* Estilos globales */
+
 body {
     font-family: 'Antic Didone', serif;
     margin: 0;
@@ -43,7 +43,7 @@ header {
     padding: 20px;
 }
 
-/* Estilos para las tarjetas de habitaciones */
+
 .habitaciones {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -110,7 +110,7 @@ header {
     background-color: var(--color-acento);
 }
 
-/* Estilos para el formulario */
+
 .formulario-reserva {
     background-color: var(--color-secundario);
     padding: 30px;
@@ -172,10 +172,10 @@ button.btn-enviar:hover {
     color: red;
     font-family: 'Antic Didone', serif;
     font-size: 0.9rem;
-    display: none; /* Oculto por defecto */
+    display: none; 
 }
 
-/* Ajustes responsivos */
+
 @media (max-width: 768px) {
     .titulo-principal {
         font-size: 2rem;

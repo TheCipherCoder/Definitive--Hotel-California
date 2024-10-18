@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
-var testimoniosController = require('../controllers/testimoniosController'); // Importa tu controlador
+var testimoniosController = require('../controllers/testimoniosController'); 
 
-/* GET home page. */
-router.get('/', testimoniosController.reservaciones); // Cambia la función que maneja la ruta
+
+router.get('/', testimoniosController.reservaciones); 
 
 module.exports = router;

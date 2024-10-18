@@ -10,7 +10,7 @@
     --fuente-titulo: 'Simonetta', serif;
     --fuente-parrafo: 'Antic Didone', serif;
 }
-/* Navbar */
+
 nav {
     background-color: transparent;
     transition: background-color 0.3s ease;
@@ -22,7 +22,7 @@ nav {
 }
 
 
-/* Estilos globales */
+
 body {
     margin: 0;
     padding: 0;
@@ -105,7 +105,7 @@ body {
     margin-top: 10px;
 }
 
-/* Ubicación */
+
 .ubicacion {
     padding: 50px 100px;
     background-color: var(--color-secundario);
@@ -128,7 +128,7 @@ body {
     font-family: var(--fuente-parrafo);
 }
 
-/* Responsivo */
+
 @media (max-width: 768px) {
     .mision-vision-contenedor {
         flex-direction: column;
