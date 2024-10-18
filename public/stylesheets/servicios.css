@@ -13,40 +13,40 @@
     --Color-fondo-enfasis2: #f6f6f6;
     --Color-fondo-enfasis3: #2e2e2e;
     --Color-fondo-enfasis4: #3e474a;
-    --Fuente:"Antic Didone", serif;
+    --Fuente: "Antic Didone", serif;
     --Fuente-2: "Simonetta", serif;
 }
 
-/*FUENTE*/
+
 .antic-didone-regular {
     font-family: "Antic Didone", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-  .simonetta-regular {
+.simonetta-regular {
     font-family: "Simonetta", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
 
 * {
     padding: 0;
     margin: 0;
-   /* box-sizing: border-box;*/
+
     font-family: var(--Fuente);
 }
 
-body{
+body {
     background-color: var(--Color-fondo-2);
 }
 
-main{
+main {
     margin: 1.25rem 5rem;
 }
 
-/* Barra de navegación */
+
 nav {
     background-color: black;
     padding: 10px 0;
@@ -56,51 +56,51 @@ nav {
     width: 100%;
     z-index: 1000;
     transition: background-color 0.3s ease-in-out;
-    }
-    
-    #navbar {
-        background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
-    }
-    
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    nav ul li {
-        margin: 0 15px;
-    }
-    
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        padding: 10px 20px;
-        display: block;
-    }
-    
-    nav ul li a:hover {
-        color: #E8B34B;
-    }
-    
-    #navbar.scrolled {
-        background: rgba(0, 0, 0, 1);
-        transition: background-color 0.3s ease-in-out;
-    }
-    
+}
+
+#navbar {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: #E8B34B;
+}
+
+#navbar.scrolled {
+    background: rgba(0, 0, 0, 1);
+    transition: background-color 0.3s ease-in-out;
+}
 
 
 
-/* Header*/
+
+
 
 .header-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 400px; /* Ajusta este valor según lo necesites */
+    height: 400px;
     overflow: hidden;
 }
 
@@ -114,17 +114,17 @@ nav {
 
 
 
-/*seccion experiencias */
+
 .experiencias {
     text-align: center;
     margin-top: 1.875rem;
 }
 
-.experiencias-container{
-    display:flexbox;
+.experiencias-container {
+    display: flexbox;
 }
 
-.texto-experiencias{
+.texto-experiencias {
     margin-top: 2.5rem;
     margin-bottom: 1.25rem;
     text-align: justify;
@@ -132,7 +132,7 @@ nav {
     font-family: var(--Fuente-2);
 }
 
-.separador{
+.separador {
     padding-top: 1.5rem;
     border-bottom: 0.20rem solid #E8B34B;
     width: 64px;
@@ -149,7 +149,7 @@ nav {
     font-size: 1.7rem;
 }
 
-/* Sección Nuestras Instalaciones */
+
 .instalaciones {
     text-align: center;
     margin-top: 4rem;
@@ -157,7 +157,7 @@ nav {
 
 
 .instalaciones-container {
-    display:inline-flex;
+    display: inline-flex;
     margin-top: 5rem;
     margin-bottom: 6rem;
 }
@@ -174,41 +174,41 @@ nav {
     border-radius: 3.125rem;
     max-width: 16rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 
 }
 
 .servicio-card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px var(--Color-fondo-enfasis3);
-  }
+}
 
-.servicio-card h3{
+.servicio-card h3 {
     color: #E8B34B;
     margin-bottom: 0.625rem;
 }
 
 
 .servicio-card p {
- color: var(--Color-texto2);
- margin-bottom: 0.625rem;
+    color: var(--Color-texto2);
+    margin-bottom: 0.625rem;
 }
 
-.servicio-img-container{
- margin: 1.9rem;
+.servicio-img-container {
+    margin: 1.9rem;
 }
 
-.servicio-texto{
+.servicio-texto {
     font-family: var(--Fuente-2);
 }
 
 .servicio-img {
- border-radius: 1.9rem;
- max-width: 12.5rem;
- margin-right: 0.625rem;
+    border-radius: 1.9rem;
+    max-width: 12.5rem;
+    margin-right: 0.625rem;
 }
 
-.boton-informacion{
+.boton-informacion {
     background: var(--Color-fondo-enfasis3);
     color: var(--Color-texto);
     border-radius: 0.938rem;
@@ -219,14 +219,14 @@ nav {
     margin-bottom: 1.25rem;
 }
 
-/*recomendaciones*/
+
 
 .recomendaciones {
     text-align: center;
 }
 
-.recomendaciones-container{
-    display:flex;
+.recomendaciones-container {
+    display: flex;
     margin-top: 4rem;
 }
 
@@ -239,7 +239,7 @@ nav {
     margin-right: 1.563rem;
     margin-left: 1.25rem;
     background-color: var(--Color-fondo-enfasis3);
-    /*border-radius: 50px;*/
+
     max-width: 30rem;
     color: var(--Color-texto);
 }
@@ -255,78 +255,79 @@ nav {
     padding: 0rem 1.5rem 0rem 1.5rem;
     text-align: left;
 }
-.rating .star {
-        font-size: 1.4rem;
-        color: gold;
-        
-    }
 
-.recomendaciones-texto{
+.rating .star {
+    font-size: 1.4rem;
+    color: gold;
+
+}
+
+.recomendaciones-texto {
     padding: 0.8rem 1.5rem 1.5rem 1.5rem;
     text-align: justify;
 }
 
-.contenedor-reservar{
+.contenedor-reservar {
     display: flex;
     padding: 5rem 0.625rem;
 }
 
-.reservar{
+.reservar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.btn-reservar{
-    display: inline-flex;          
-    align-items: center;           
-    justify-content: center;     
+.btn-reservar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px 20px;
-    background-color: #E8B34B;     
+    background-color: #E8B34B;
     color: white;
     text-align: center;
     text-decoration: none;
     border-radius: 0.25rem;
     font-size: 1.2rem;
-    height: 2.5rem; 
+    height: 2.5rem;
     width: 8rem;
 }
 
-.btn-reservar:hover{
-    
+.btn-reservar:hover {
+
     background-color: #e0a121;
-    box-shadow: 0 4px 15px #a87510; 
+    box-shadow: 0 4px 15px #a87510;
 }
 
-.InfoSpa{
+.InfoSpa {
     text-align: center;
-    display:block;
+    display: block;
 }
 
 .InfoSpa h2 {
-   font-size: 1.5rem;
-   margin-bottom:2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 #InfoSpa-p {
     font-size: 1rem;
-    margin-bottom:2.9rem;
+    margin-bottom: 2.9rem;
     margin-left: 18rem;
     margin-right: 18rem;
     font-family: var(--Fuente-2);
 }
 
-.InfoSpa-container{
-    display:block;
+.InfoSpa-container {
+    display: block;
 }
 
-.InfoSpa-card{
-    display:flex;
-    margin-bottom:4rem;
+.InfoSpa-card {
+    display: flex;
+    margin-bottom: 4rem;
 }
 
 
-/* primer card */
+
 .servicio-img-1 {
     text-align: left;
     width: 100%;
@@ -338,31 +339,31 @@ nav {
     border-radius: 3.125rem;
 }
 
-.servicio-contenido1{
+.servicio-contenido1 {
     width: 50%;
     text-align: left;
     padding-top: 3.125rem;
     margin-left: 3.125rem;
 }
 
-.servicio-titulo-1{
+.servicio-titulo-1 {
     font-size: 1.125rem;
     margin-top: 3rem;
-    margin-bottom:2.9rem;
+    margin-bottom: 2.9rem;
     margin-left: 3.125rem;
     text-align: left;
 }
 
-.servicio-texto-1{
+.servicio-texto-1 {
     font-size: 1.125rem;
     margin-top: 3rem;
-    margin-bottom:2.9rem;
+    margin-bottom: 2.9rem;
     margin-left: 3.125rem;
     text-align: justify;
 
 }
 
-/*segundo card*/
+
 
 .servicio-img-2 {
     text-align: right;
@@ -375,127 +376,122 @@ nav {
     border-radius: 3.125rem;
 }
 
-.servicio-contenido2{
+.servicio-contenido2 {
     width: 50%;
     text-align: left;
     padding-top: 3.125rem;
     margin-right: 3.125rem;
 }
 
-.servicio-titulo-2{
+.servicio-titulo-2 {
     font-size: 1.125rem;
     margin-top: 3rem;
-    margin-bottom:2.9rem;
+    margin-bottom: 2.9rem;
     margin-right: 3.125rem;
     text-align: left;
 }
 
-.servicio-texto-2{
+.servicio-texto-2 {
     font-size: 1.125rem;
     margin-top: 3rem;
-    margin-bottom:2.9rem;
+    margin-bottom: 2.9rem;
     margin-right: 3.125rem;
     text-align: justify;
 }
 
 
-/*card gimnasio*/
 
-.InfoGimnasio{
+
+.InfoGimnasio {
     text-align: center;
-    display:block;
+    display: block;
 }
 
 .InfoGimnasio h2 {
     font-size: 1.5rem;
-    margin-bottom:2rem;
- }
- 
- #InfoGimnasio-p {
-     font-size: 1rem;
-     margin-bottom:2.9rem;
-     margin-left: 18rem;
-     margin-right: 18rem;
-     font-family: var(--Fuente-2);
- }
+    margin-bottom: 2rem;
+}
 
- .InfoGimnasio-container{
-    display:block;
- }
+#InfoGimnasio-p {
+    font-size: 1rem;
+    margin-bottom: 2.9rem;
+    margin-left: 18rem;
+    margin-right: 18rem;
+    font-family: var(--Fuente-2);
+}
+
+.InfoGimnasio-container {
+    display: block;
+}
 
 
- .InfoGimnasio-card{
-    display:flex;
-    margin-bottom:4rem;
- }
-
- 
+.InfoGimnasio-card {
+    display: flex;
+    margin-bottom: 4rem;
+}
 
 
 
 
 
-/*Video*/
 
-#seccion-video{
+
+
+
+#seccion-video {
     display: flex;
     margin-top: 90px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
-#seccion-video h2{
+#seccion-video h2 {
     padding: 1rem;
     align-content: center;
 }
 
 .video {
-    padding: 1.6rem;  
+    padding: 1.6rem;
 }
 
 
-.video video{
+.video video {
     border-radius: 1.5rem;
-    
+
     box-shadow: 0 8px 20px var(--Color-fondo-enfasis4);
 }
 
-/*footer*/
 
-/*footer{
-    background-color: var(--Color-fondo-enfasis3);
-    height: 10rem;
-}*/
 
 .footer {
-    background-color: #000000; 
-    color: #fff; 
-    padding: 50px; 
-    text-align: center; 
-    position: relative; 
+    background-color: #000000;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    position: relative;
 }
 
 .footer-content {
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 .footer-text {
-    max-width: 70%; 
+    max-width: 70%;
 }
 
 .social-media-icons {
-    display: flex; 
-    gap: 10px; 
-    position: absolute; 
-    bottom: 10px; 
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
     right: 10px;
 }
 
 .social-media-icons img {
-    width: 30px; 
-    height: auto; 
+    width: 30px;
+    height: auto;
 }
 
 @media (max-width: 600px) {
@@ -509,9 +505,9 @@ nav {
     }
 
     .social-media-icons {
-        position: relative; 
-        bottom: auto; 
+        position: relative;
+        bottom: auto;
         right: auto;
-        margin-top: 10px; 
+        margin-top: 10px;
     }
 }

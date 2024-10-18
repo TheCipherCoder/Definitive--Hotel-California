@@ -46,7 +46,7 @@ formulario.addEventListener("submit", (e) => {
         formulario.reset();
     }
 });
-//bloque reservas
+
 const cuadros = document.querySelectorAll(".cuadro");
 const btns = document.querySelectorAll(".btn");
 
@@ -115,7 +115,7 @@ btn.forEach((btn) => {
         }
     });
 });
-//tutulo
+
 const titulo = document.getElementById("titulo");
 const texto = "Reserva ahora y disfruta con tranquilidad";
 let indice = 0;
@@ -124,7 +124,7 @@ function escribirTexto() {
     if (indice < texto.length) {
         titulo.textContent += texto[indice];
         indice++;
-        setTimeout(escribirTexto, 50); // Velocidad de escritura
+        setTimeout(escribirTexto, 50); 
     }
 }
 

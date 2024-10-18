@@ -124,7 +124,7 @@ function escribirTexto() {
     if (indice < texto.length) {
         titulo.textContent += texto[indice];
         indice++;
-        setTimeout(escribirTexto, 50); // Velocidad de escritura
+        setTimeout(escribirTexto, 50); 
     }
 }
 
